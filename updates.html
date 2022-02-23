@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" media="screen">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/1905ae2f44.js"></script>
+
+		<title>D&D Activity Tracker</title>
+	</head>
+  
+	<body>
+		<div class="container">
+			<h1 id="changelogHeading">Changelog</h1>
+			<div>
+				<ul class="updateList">
+					<h4>Date: 17/06/2021</h4>
+					<li>Added a Healing column to the tracker. As you may be able to guess, numbers entered in this column are added to the health of the respective creature.</li>
+					<li>Made some changes to page scaling at different browser and windows sizes. The table should now be more readable and make more efficient use of space at smaller sizes.</li>
+					<li>Added a more robust Undo/Redo system. You can now undo changes made in the tracker fields, including damage and healing, by using the buttons in the top left or using keyboard shortcuts. This system may not work properly with loaded data that was created before this update.</li>
+					<li>Adjusted the sizes of the colour coding options to make them more useable on smaller devices.</li>
+					<li>Made some minor code optimizations (will likely only be noticeable when using many rows in the tracker).</li>
+					<li>Fixed some toolbar display elements not changing text colour correctly.</li>
+					<li>Help info will now appear as a modal covering the screen, rather than a popover that was difficult to read on smaller window sizes.</li>
+					<li>The page should now correctly ask for confirmation when refreshing, closing or leaving the page if any data has been changed in the current session.</li>
+					
+					<h4>Date: 06/07/2020</h4>
+					<li>Added this page.</li>
+					<li>Added a new toolbar to the top of the screen and removed the Settings button. Options from the Settings menu have been moved to the toolbar.</li>
+					<li>Fixed an issue when importing a saved file that was lacking initiative counts for some rows. All rows with blank initiative cells should now load containing a placeholder 0, rather than not loading at all.</li>
+					<li>Changed the text colour in yellow rows to make it more readable.</li>
+					<li>Changed the default sorting order of the table to place raw initiative numbers first. The sorting order can still be changed in the settings.</li>
+					<li>Fixed some browser compatibility issues.</li>						
+				</ul>
+			</div>
+		</div>
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	</body>
+</html>
