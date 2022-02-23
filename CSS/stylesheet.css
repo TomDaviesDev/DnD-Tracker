@@ -1,0 +1,250 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background-color: #252830;
+	color: #FFFFFF;
+}
+
+label {
+	margin: 0px 0px 0px 0px;
+	cursor: pointer;
+	padding-left: 3px
+}
+
+a {
+	cursor: pointer;	
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.topnav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 14px;
+	border-left: 1px solid #666666;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.topnav a:hover {
+	background-color: rgba(221, 221, 221, 0.623);
+	color: black !important;
+	}
+
+#navUndoButton {
+	float: left;
+	border-left: none;
+}
+
+#navUndoButton:hover {
+	background-color: lightcoral;
+	color: black;
+}
+
+#navRedoButton {
+	float: left;
+	border-right: 1px solid #666666;
+}
+
+#navRedoButton:hover {
+	background-color: lightgreen;
+	color: black;
+}
+
+.short-text {
+	display: none;
+}
+
+#initiativeDiv {
+	text-align: center;
+	max-width: 100%;
+}
+
+#initiativeTrackerTable {
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+	margin-left: auto;
+}
+
+th, td {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+th, h1 {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input {
+	text-align: center;
+}
+
+.buttonCell {
+	border: none;
+}
+
+.extrasCell.noDownload {
+	border: none;
+	max-width: 100%;
+}
+
+#newRowButtonCell {
+	padding-left: 25px;
+	padding-right: 26px;
+}
+
+#undoButtonCell {
+	padding: 0px;
+}
+
+.helpContainer {
+	text-align: left;
+}
+
+.helpContainer li {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.colourSelector {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.colourCode1 {
+	background-color: #C91010;
+}
+
+.colourCode2 {
+	background-color: #1076C9;
+}
+
+.colourCode3{
+	background-color: #2FC910;
+}
+
+.colourCode4 {
+	background-color: #C97310;
+}
+
+.colourCode5 {
+	background-color: #9510C9;
+}
+
+.colourCode6 {
+	background-color: #EB75E1;
+}
+
+.colourCode7 {
+	background-color: #E5EB75;
+}
+
+.fa-times {
+	color: red;
+	font-size: 38px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.modal-content {
+	background-color: #252830;
+	max-width: 300px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.modal .modal-content#helpModal{
+	max-width: none;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.updateList {	
+	text-align: left;
+	padding: 10px;	
+}
+
+.updateList h4 {
+	margin-top: 50px;
+}
+
+.popover {
+	background-color: #BDBDBD;
+	color: #252830;
+}
+
+#browserWarning {	
+	font-size: small;	
+}
+
+#changelogHeading {	
+	margin-top: 50px;	
+}
+
+.animateUndo {
+	animation-name: animUndo;
+	animation-duration: 0.5s;
+}
+
+.animateRedo {
+	animation-name: animRedo;
+	animation-duration: 0.5s;
+}
+
+@keyframes animUndo {
+	from {background-color: lightcoral;}
+	to {background-color: inherit;}
+}
+
+@keyframes animRedo {
+	from {background-color: lightgreen;}
+	to {background-color: inherit;}
+}
+
+@media screen and (max-width: 1135px) {
+	th, td {	
+		text-align: center;
+		border: 1px solid white;
+		padding: 5px;		
+	}
+
+	#initiativeTrackerTable {
+		max-width: 100%;
+	}
+
+	input {	
+		width: 100%;
+	}
+
+	.full-text {	
+		display: none;	
+	}
+
+	.short-text {	
+		display: inline-block;	
+	}
+
+	td {	
+		font-size: small;	
+	}
+}
